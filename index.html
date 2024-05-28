@@ -5,21 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>French Fries University</title>
     <style>
-        /* Add your CSS styles here */
+        /* General Styles */
         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
             background-color: #f5f5dc; /* Light beige color */
         }
+        header {
+            background-color: #ffc107; /* Yellow color */
+            padding: 20px;
+            text-align: center;
+        }
+        h1, h2, p {
+            margin: 0;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        /* Tabs Styles */
         .tabs {
             display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
         }
         .tab {
             padding: 10px 20px;
-            background-color: #ddd;
+            background-color: #ffd54f; /* Amber color */
             margin-right: 10px;
             cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .tab:hover {
+            background-color: #ffca28; /* Darker amber color on hover */
         }
         .tab-content {
             display: none;
+        }
+        /* Content Styles */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 5px;
+        }
+        p {
+            line-height: 1.6;
         }
     </style>
 </head>
@@ -36,29 +71,23 @@
             <div class="tab" onclick="openTab('background')">Background</div>
         </div>
         <div id="admission" class="tab-content">
-            <p>At French Fries University, we believe in equal opportunity for all fry enthusiasts. No tests or GPA requirements are needed to join our crispy community. We welcome students from all backgrounds and walks of life, united by a shared passion for the art of fries. Our admissions process is straightforward and inclusive, ensuring that everyone who dreams of mastering the fryer can have the chance to learn and grow with us.
-
-    Once admitted, students are immersed in a vibrant community of like-minded individuals, all dedicated to exploring the culinary potential of the humble potato. Our support system includes mentorship programs, hands-on training sessions, and access to state-of-the-art facilities. Whether you're a seasoned chef looking to refine your skills or a novice eager to learn the basics, French Fries University provides the resources and encouragement you need to succeed.
-
-    We pride ourselves on creating an environment that fosters creativity, innovation, and collaboration. By joining French Fries University, you'll not only gain practical skills and knowledge but also become part of a network of fry aficionados who are shaping the future of fried cuisine. Our open-door policy ensures that everyone who has a love for fries can find their place here, contributing to a diverse and dynamic learning experience.</p>
+            <p>At French Fries University, we believe in equal opportunity for all fry enthusiasts. No tests or GPA requirements are needed to join our crispy community. We welcome students from all backgrounds and walks of life, united by a shared passion for the art of fries. Our admissions process is straightforward and inclusive, ensuring that everyone who dreams of mastering the fryer can have the chance to learn and grow with us.</p>
+            <p>Once admitted, students are immersed in a vibrant community of like-minded individuals, all dedicated to exploring the culinary potential of the humble potato. Our support system includes mentorship programs, hands-on training sessions, and access to state-of-the-art facilities. Whether you're a seasoned chef looking to refine your skills or a novice eager to learn the basics, French Fries University provides the resources and encouragement you need to succeed.</p>
+            <p>We pride ourselves on creating an environment that fosters creativity, innovation, and collaboration. By joining French Fries University, you'll not only gain practical skills and knowledge but also become part of a network of fry aficionados who are shaping the future of fried cuisine. Our open-door policy ensures that everyone who has a love for fries can find their place here, contributing to a diverse and dynamic learning experience.</p>
         </div>
         <div id="major" class="tab-content">
-            <p>>Our curriculum is centered around the art and science of frying fries. From selecting the perfect potatoes to mastering the ideal oil temperature, our students graduate with a deep understanding of the fryer's craft. The program is meticulously designed to cover every aspect of the fry-making process. Major options include Frying Fries, Slicing Potatoes, and Picking Fresh Potatoes. 
-
-    In the Frying Fries major, students delve into the chemistry and physics of frying, exploring various techniques and technologies to achieve the perfect crispiness and flavor. Courses cover oil types, temperature control, and innovative frying methods.
-
-    The Slicing Potatoes major focuses on precision and consistency in preparing potatoes for frying. Students learn about different slicing techniques, the impact of slice thickness on cooking, and the importance of uniformity for even frying.
-
-    The Picking Fresh Potatoes major teaches students how to identify the best potatoes for frying, understanding the significance of potato varieties, growing conditions, and storage methods. This major emphasizes the importance of quality ingredients as the foundation of exceptional fries.
-
-    Our comprehensive curriculum ensures that graduates are well-equipped with the knowledge and skills needed to excel in the world of fried cuisine, whether they aim to open their own fry shops, innovate in culinary arts, or consult for leading food establishments.</p>
+            <p>Our curriculum is centered around the art and science of frying fries. From selecting the perfect potatoes to mastering the ideal oil temperature, our students graduate with a deep understanding of the fryer's craft. The program is meticulously designed to cover every aspect of the fry-making process. Major options include Frying Fries, Slicing Potatoes, and Picking Fresh Potatoes.</p>
+            <p>In the Frying Fries major, students delve into the chemistry and physics of frying, exploring various techniques and technologies to achieve the perfect crispiness and flavor. Courses cover oil types, temperature control, and innovative frying methods.</p>
+            <p>The Slicing Potatoes major focuses on precision and consistency in preparing potatoes for frying. Students learn about different slicing techniques, the impact of slice thickness on cooking, and the importance of uniformity for even frying.</p>
+            <p>The Picking Fresh Potatoes major teaches students how to identify the best potatoes for frying, understanding the significance of potato varieties, growing conditions, and storage methods. This major emphasizes the importance of quality ingredients as the foundation of exceptional fries.</p>
+            <p>Our comprehensive curriculum ensures that graduates are well-equipped with the knowledge and skills needed to excel in the world of fried cuisine, whether they aim to open their own fry shops, innovate in culinary arts, or consult for leading food establishments.</p>
         </div>
         <div id="mascot" class="tab-content">
             <img src="https://m.media-amazon.com/images/I/81Hl5xYtJQL._AC_UY1000_.jpg" alt="Fry Guy - French Fries University Mascot">
         </div>
         <div id="background" class="tab-content">
             <p>Established in 1985, French Fries University has a rich history of innovation in the world of fried cuisine. Our alumni have gone on to open acclaimed fry shops, lead culinary revolutions, and even consult for multinational fast-food chains. Join us and become part of a tradition as golden as the fries we fry.</p>
-            <img src="https://www.google.com/imgres?q=french%20fries%20university&imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Ff%2Ffb%2FGville_UF_french_fries_sculpture_01.jpg%2F2560px-Gville_UF_french_fries_sculpture_01.jpg&imgrefurl=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3AGville_UF_french_fries_sculpture_01.jpg&docid=302zI8cbBDauQM&tbnid=uR4kDiGQUvPvcM&vet=12ahUKEwjl1sDtmbGGAxX-K1kFHceHDgsQM3oECE0QAA..i&w=2560&h=1920&hcb=2&ved=2ahUKEwjl1sDtmbGGAxX-K1kFHceHDgsQM3oECE0QAA" alt="French Fries University Background Image">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Gville_UF_french_fries_sculpture_01.jpg/2560px-Gville_UF_french_fries_sculpture_01.jpg" alt="French Fries University Background Image">
         </div>
     </main>
 
@@ -72,9 +101,5 @@
             document.getElementById(tabName).style.display = "block";
         } 
     </script>
-</body>
-</html>
-
-    </main>
 </body>
 </html>
