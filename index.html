@@ -6,7 +6,21 @@
     <title>French Fries University</title>
     <style>
         /* Add your CSS styles here */
-        /* For simplicity, you can add styles inline or link an external stylesheet */
+        body {
+            background-color: #f5f5dc; /* Light beige color */
+        }
+        .tabs {
+            display: flex;
+        }
+        .tab {
+            padding: 10px 20px;
+            background-color: #ddd;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .tab-content {
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -15,22 +29,40 @@
         <p>Discover the Crispy World of French Fries</p>
     </header>
     <main>
-        <section>
-            <h2>Admission</h2>
+        <div class="tabs">
+            <div class="tab" onclick="openTab('admission')">Admission</div>
+            <div class="tab" onclick="openTab('major')">Major</div>
+            <div class="tab" onclick="openTab('mascot')">Mascot</div>
+            <div class="tab" onclick="openTab('background')">Background</div>
+        </div>
+        <div id="admission" class="tab-content">
             <p>At French Fries University, we believe in equal opportunity for all fry enthusiasts. No tests or GPA requirements are needed to join our crispy community.</p>
-        </section>
-        <section>
-            <h2>Major</h2>
+        </div>
+        <div id="major" class="tab-content">
             <p>Our curriculum is centered around the art and science of frying fries. From selecting the perfect potatoes to mastering the ideal oil temperature, our students graduate with a deep understanding of the fryer's craft.</p>
-        </section>
-        <section>
-            <h2>Mascot</h2>
+        </div>
+        <div id="mascot" class="tab-content">
             <img src="https://m.media-amazon.com/images/I/81Hl5xYtJQL._AC_UY1000_.jpg" alt="Fry Guy - French Fries University Mascot">
-        </section>
-        <section>
-            <h2>Background</h2>
+        </div>
+        <div id="background" class="tab-content">
             <p>Established in 1985, French Fries University has a rich history of innovation in the world of fried cuisine. Our alumni have gone on to open acclaimed fry shops, lead culinary revolutions, and even consult for multinational fast-food chains. Join us and become part of a tradition as golden as the fries we fry.</p>
-        </section>
+            <img src="https://example.com/background-image.jpg" alt="French Fries University Background Image">
+        </div>
+    </main>
+
+    <script>
+        function openTab(tabName) {
+            var i, tabcontent;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            document.getElementById(tabName).style.display = "block";
+        } 
+    </script>
+</body>
+</html>
+
     </main>
 </body>
 </html>
